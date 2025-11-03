@@ -1,5 +1,31 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
+
 {% block title %}
 Experience
-{% endblock %}
+{% endblock title %}
+
+{% block content %}
+<section class="experience-section center-column">
+  <h2>Experience | Education</h2>
+
+  <div class="experience-list">
+    {% for experience in experiences %}
+    <div class="experience-card">
+      <p>{{experience.school}}</p>
+      <p>{{experience.description}}</p>
+
+      <p>{{experience.year}}</p>
+      {% for position in experience.position.all %}
+      <div class="skills-container center">
+        <label class="text-label">{{position.title}}</label>
+        {% endfor %}
+
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endblock content %}

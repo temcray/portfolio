@@ -5,13 +5,15 @@ class Skill(models.Model):
     name = models.CharField(max_length=50)
 
 
+    
+
 
 
 
 class Project(models.Model):
-      name = models.CharField(max_length=50)
-      description = models.TextField()
-      year = models.IntegerField()
-      image = models.ImageField(upload_to='project/')
-      repository = models.URLField()
-      skills = models.ManyToManyField("skill")
+    name = models.CharField(max_length=50)
+    description = models.TextField()
+    year = models.IntegerField()
+    image = models.ImageField(upload_to='project/')
+    repository = models.URLField()
+    skills = models.ManyToManyField("skill")

@@ -1,9 +1,9 @@
 from django.urls import path
-from project import views
+from portfolio import views
 
 urlpatterns = [
-    path("", views.about_me_view, name= "about_me"),
+    path('', views.about_me_view, name = 'about_me'),
     path('experience/', views.experience_view, name= "experience"),
-    path('projects/',views.projects_view, name= "projects"),
+    
     
 ]

@@ -1,41 +1,36 @@
-{% load static %}
 {% extends "base.html" %}
+
+{% load static %}
 
 {% block title %}
 About Me
 {% endblock %}
 
 
-{%blockcontent%}
+{%block content%}
 <section class="about-section center">
   <div class="about-image-container center">
-    <img src="{% static 'img/avatar-img.jpg' %}" alt="my picture" />
+    <img src="{% static './img/myphoto.jpg' %}" alt="my picture" />
     <a href="assets/resume.pdf" download><button>Get the Full resume</button></a>
   </div>
 
   <div class="about-description-container center-column">
     <div class="center-column">
-      <h1>My rol as dev</h1>
+      <h1>My role as developer</h1>
       <h2>Tatiana McCray</h2>
     </div>
 
     <p>
-      Lorem ipsum dolor sit amet consectetur. Diam porttitor nisl lacinia id
-      viverra dignissim eu iaculis. In sit pharetra rutrum lacus vehicula nunc
-      sit varius. Odio ultricies faucibus aliquam dis. Dictumst adipiscing
-      tincidunt nunc rhoncus. Quisque neque sapien feugiat id dapibus ut risus.
-      Elit et amet adipiscing diam quis quam et. Rhoncus sed urna dignissim ac
-      porttitor eu arcu ut. Adipiscing turpis risus nascetur felis in morbi
-      sollicitudin id egestas. Adipiscing amet est tristique volutpat in.
-      Gravida purus aliquet tincidunt nibh ultrices faucibus. Eleifend amet id
-      cursus phasellus. Non vulputate condimentum adipiscing tempor justo metus
-      turpis diam risus. Pellentesque in interdum ullamcorper amet scelerisque
-      velit. Sem nec duis in amet. <br /><br />
-      Integer nisl cursus turpis tempus eget tincidunt fringilla cras. Bibendum
-      cursus cursus enim elit at risus in etiam. Vitae a condimentum et sed
-      integer neque quam et arcu. Ac at tellus metus elementum lectus. In magna
-      eget tincidunt adipiscing scelerisque proin blandit. Scelerisque velit
-      vestibulum tincidunt pharetra nisi volutpat facilisis orci ornare.
+      Hi! I’m a passionate front-end developer who loves turning ideas into clean, responsive, and engaging websites.
+      I’ve been building projects like coffee blog, my cookie shop web app, and a React-based project which is an
+      electronic site, each one helping
+      me improve in my skills and creativity. I work mainly with HTML, CSS, and JavaScript, and I’m especially strong in
+      JavaScript — I enjoy using it to make websites come alive with smooth interactions and smart functionality. I also
+      have experience with React, and Python, which helps me understand both front-end and back-end concepts. What
+      drives me most is the process of creating, problem-solving, and continuously improving. I love learning new tools,
+      refining designs, and finding better ways to build user-friendly experiences. When I’m not coding, I’m usually
+      exploring new design ideas, learning more about web technologies, or brainstorming my next project.
+
     </p>
   </div>
 </section>
