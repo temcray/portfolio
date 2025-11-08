@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .models import Experience
-
+from .forms import ContactForm
+from django.core.mail import send_mail
 
 
 
@@ -10,3 +11,39 @@ def about_me_view(request):
 def experience_view(request):
     experiences = Experience.objects.all()
     return render(request, 'portfolio/experience.html', {'experiences': experiences})
+def contact_views(request):
+    if request.method == 'POST': 
+        form = ContactForm(request.POST)
+
+        if form.is_valid():
+            name = form.cleaned_data['name']
+            email = form.cleaned_data['email']
+            message = form.cleaned_data['message']
+
+            message_body = (
+                f'You have a new email from your portfolio'
+                f'Name: {name}\n'
+                f'Email: {email}\n'
+                f'message: {message}\n'
+            )
+            try:
+                send_mail(
+                "Email from portfolio",
+                message_body,
+                email,
+                ['ejamison06@gmail.com']
+                )
+                form = ContactForm()
+                return render(request, 'portfolio/contact.html', {'form': form })
+            except Exception as e:
+                print(f'Error sending email: {e}')
+                return render(request, 'portfolio/contact.html', {'form': form })
+        else: 
+            print("Invalid data")
+    else:
+        form = ContactForm()
+        return render(request, 'portfolio/contact.html', {'form': form})
+    
+        
+
+
