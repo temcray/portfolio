@@ -131,63 +131,68 @@ a p:nth-child(4),  .experience-card p:nth-child(4)  {
 /*Contact Section*/
 /* Contact Section */
 .contact-section {
-  padding: 4rem 1rem;
-  background-color: #4E342E; /* Dark coffee brown background */
-  color: #FAF3E0; /* Light beige text */
-  text-align: center;
-  flex-direction: column;
+padding: 4rem 1rem;
+background-color: #4E342E; /* Dark coffee brown background */
+color: #FAF3E0; /* Light beige text */
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 
 .contact-section h2 {
-  font-size: 2rem;
+font-size: 2rem;
   color: #D2691E; /* Chocolate brown accent */
-  margin-bottom: 2rem;
-  letter-spacing: 0.05rem;
+margin-bottom: 2rem;
+letter-spacing: 0.05rem;
 }
 
 /* Form layout */
 .contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-  width: 100%;
-  max-width: 500px;
-  margin: 0 auto;
+display: flex;
+flex-direction: column;
+gap: 1.2rem;
+width: 100%;
+max-width: 500px;
+margin: auto;
 }
 
 /* Inputs and Textareas */
 .contact-form input,
 .contact-form textarea {
-  background-color: #6D4C41; /* Medium brown input background */
-  border: 1px solid #A0522D; /* Sienna border */
-  border-radius: 6px;
-  padding: 0.8rem 1rem;
-  color: #FAF3E0;
-  font-size: 1rem;
-  resize: none;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+background-color: #6D4C41; /* Medium brown input background */
+border-radius: 6px;
+padding: 0.1rem 1rem;
+color: #FAF3E0;
+width: 100%;
+box-sizing: border-box;
+font-size: 2rem;
+resize: none;
+transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  outline: none;
-  border-color: #D2691E; /* Chocolate brown focus */
-  box-shadow: 0 0 6px rgba(210, 105, 30, 0.6);
+outline: none;
+border-color: #D2691E; /* Chocolate brown focus */
+box-shadow: 0 0 6px rgba(210, 105, 30, 0.6);
+width: 100%;
+box-sizing: border-box;
 }
 
 /* Submit Button */
 .contact-form button {
-  background-color: #A0522D; /* Sienna */
-  color: #FAF3E0;
-  font-weight: bold;
-  padding: 0.8rem;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+background-color: #A0522D; /* Sienna */
+color: #FAF3E0;
+font-weight: bold;
+padding: 0.8rem;
+border: none;
+border-radius: 6px;
+cursor: pointer;
+transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .contact-form button:hover {
-  background-color: #8B4513; /* SaddleBrown */
-  transform: scale(1.05);
+background-color: #8B4513; /* SaddleBrown */
+transform: scale(1.05);
 }
