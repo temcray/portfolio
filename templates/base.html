@@ -21,12 +21,14 @@
   <header class="center">
 
     <!--Links or Options of the Menu-->
-    <div class="nav-link center">
+    <nav class="nav-link center">
       <a href="{% url 'about_me' %}">About me</a>
       <a href="{% url 'project' %}">Projects</a>
       <a href="{% url 'experience' %}">Experience</a>
-      <a href="{% url 'contact' %}">Conatct</a>
-    </div>
+      <a href="{% url 'contact' %}">Contact</a>
+      <a href="{% static 'files/Tatiana_EMcCray_Resume.pdf'%}" download class"resume-btn">
+        My Resume
+      </a>
     </nav>
   </header>
 
@@ -38,7 +40,7 @@
 
   <footer>
     <a href="">
-      <h2>Tatiana E McCray</h2>
+      <h2>& 2026 Tatiana E McCray | Portfolio</h2>
     </a>
 
     <nav class="nav-footer center">

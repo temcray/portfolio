@@ -13,7 +13,7 @@
 .about-image-container img {
     width: 60%;
     border-radius: 100%;
-    margin-bottom: 10px; /* Ajusta este valor según el espacio deseado */
+    margin-bottom: 10px; 
 }
 
 .about-image-container button {
@@ -128,12 +128,12 @@ a p:nth-child(4),  .experience-card p:nth-child(4)  {
 }
 
 
-/*Contact Section*/
+
 /* Contact Section */
 .contact-section {
 padding: 4rem 1rem;
-background-color: #4E342E; /* Dark coffee brown background */
-color: #FAF3E0; /* Light beige text */
+background-color: #4E342E; 
+color: #FAF3E0; 
 text-align: center;
 display: flex;
 flex-direction: column;
@@ -142,7 +142,7 @@ align-items: center;
 
 .contact-section h2 {
 font-size: 2rem;
-  color: #D2691E; /* Chocolate brown accent */
+  color: #D2691E; 
 margin-bottom: 2rem;
 letter-spacing: 0.05rem;
 }
@@ -160,7 +160,7 @@ margin: auto;
 /* Inputs and Textareas */
 .contact-form input,
 .contact-form textarea {
-background-color: #6D4C41; /* Medium brown input background */
+background-color: #6D4C41; 
 border-radius: 6px;
 padding: 0.1rem 1rem;
 color: #FAF3E0;
@@ -174,7 +174,7 @@ transition: border-color 0.3s ease, box-shadow 0.3s ease;
 .contact-form input:focus,
 .contact-form textarea:focus {
 outline: none;
-border-color: #D2691E; /* Chocolate brown focus */
+border-color: #D2691E; 
 box-shadow: 0 0 6px rgba(210, 105, 30, 0.6);
 width: 100%;
 box-sizing: border-box;
@@ -182,7 +182,7 @@ box-sizing: border-box;
 
 /* Submit Button */
 .contact-form button {
-background-color: #A0522D; /* Sienna */
+background-color: #A0522D; 
 color: #FAF3E0;
 font-weight: bold;
 padding: 0.8rem;
@@ -193,6 +193,6 @@ transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .contact-form button:hover {
-background-color: #8B4513; /* SaddleBrown */
+background-color: #8B4513; 
 transform: scale(1.05);
 }

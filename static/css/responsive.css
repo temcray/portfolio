@@ -1,28 +1,4 @@
-/* Responsive Desigm and the Breakpoints
 
-Good practices: Add at least two media queries, one for tablet and one for phones.
-
-Following the Microsoft documentation.
-
-Phone or Small screen
-
-    @media(max-width:640px) {
-        //Your style here
-    }
-
-Tablet or Medium screen
-
-    @media((min-width:641px) and (max-width:1007px)){
-        //Your style here
-    }
-
-Desktop or Big screen
-    All the style that is outside a media query.
-        html {
-            background-color: var(--background-color);
-            font-size: 14px;
-        }
-*/
 
 /*Tablet*/
 @media(max-width:1007px) {
