@@ -86,3 +86,7 @@ p {
 .resume-btn:hover {
     background-color: #e06600;
 }
+
+.base-main-container {
+    min-height: calc(100vh  - 161.44px)
+}
